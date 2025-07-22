@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karnika's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color-start: #3b0a3b;
+      --bg-color-end: #511845;
+      --text-color: #c7cacc;
+      --accent-color: #c91b68;
+      --hover-color: #809fff;
+      --card-color: #1a1c1f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg-color-start), var(--bg-color-end));
+      color: var(--text-color);
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header .logo-image {
+      width: 180px;
+      max-height: 200px;
+      object-fit: contain;
+      margin: 20px auto;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-color);
+    }
+
+    a {
+      color: var(--hover-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: var(--card-color);
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin: 10px 0;
+      display: inline-block;
+      margin-right: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    }
+
+    .resume-download, .contact-icons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      filter: brightness(5);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      .card {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="karni image.JPG" alt="Logo Animation" class="logo-image" />
+    <h1>Karnika V</h1>
+    <p>I am a passionate web developer focused on creating clean, user-centric interfaces that bring ideas to life.</p>
+    <p><a href="#projects">↓ Explore My Work</a></p>
+  </header>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>A beautiful, responsive landing page built using HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/Karnikavellaisamy/landing-page" target="_blank">View on GitHub</a>
+    </div>
+     <div class="card">
+        <h3>Lawyer Client Communication Platform</h3>
+        <p>Developed a secure and intelligent platform that facilitates seamless communication between lawyers and clients using AI. The system includes features like real-time chat, appointment scheduling, legal query assistance, and document sharing to streamline legal services and enhance client experience.</p>
+        <a href="https://github.com/Karnikavellaisamy/Lawyer-client-communication-site.git">GitHub</a> | <a href="#">Demo</a>
+      </div>
+    <!-- Add more project cards here -->
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">React</div>
+    <!-- Add more skill cards here -->
+  </section>
+
+  <section class="section resume-download">
+    <h2>Resume</h2>
+    <a href="karnika resume (1).pdf" download>Download My Resume</a>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email: karnikav5665@gmail.com</p>
+    <p>Phone: +91 8072377131</p>
+    <div class="contact-icons">
+      <a href="https://github.com/Karnikavellaisamy" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/karnika-v-432a93256" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
